@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url("https://images4.alphacoders.com/719/719156.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar {
+  width: 100%;
+  height: 75px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 25px;
+}
+.icon {
+  width: 200px;
+  float: left;
+  height: 70px;
+  margin-left: 100px;
+}
+.logo {
+  color: #ff7200;
+  font-size: 35px;
+  font-family: arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  margin: 50px;
+  font-size: 0.9em;
+  font-family: arial;
+  transition: all 0.8s ease-in-out;
+}
+.menu a:hover {
+  color: #ff730096;
+}
+.menu a::after {
+  content: "";
+  width: 80px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 45px;
+  margin-left: -70px;
+  transition: all 0.8s ease-in-out;
+  transform: scale(0);
+  transform-origin: left;
+}
+.menu a:hover::after {
+  transform: scale(1);
+  transform-origin: left;
+  background: #ff7200;
+}
+.type {
+  margin-right: 100px;
+}
+.search {
+  float: left;
+  width: 250px;
+  height: 30px;
+  border: 1px solid #ff7200;
+  border-radius: 5px;
+  font-family: arial;
+  font-size: 0.9em;
+  color: #fff;
+  background: transparent;
+  outline: none;
+  padding: 20px;
+}
+.search::placeholder {
+  color: #fff;
+  cursor: pointer;
+}
+.search:hover {
+  outline: none;
+}
+.btn button {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  margin-left: -0.5px;
+  border: 1px solid #ff7200;
+  background: #ff7200;
+  font-family: arial;
+  font-size: 0.9em;
+  color: #fff;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.text-container .web {
+  font-size: 60px;
+  font-family: arial;
+  color: #fff;
+}
+.dev {
+  font-size: 60px;
+  font-family: arial;
+  color: #ff7200;
+}
+.text-container p {
+  color: #ffffff9d;
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-family: arial;
+  font-weight: 200;
+  line-height: 30px;
+}
+.text-container button {
+  margin-top: 20px;
+  width: 110px;
+  height: 30px;
+  border: none;
+  background: #ff7200;
+  border-radius: 5px;
+}
+/* ======================================================================================== */
+.login-container {
+  width: 300px;
+  height: 500px;
+  padding: 30px;
+  background-color: #070707;
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 10px #000;
+}
+.login-container button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-family: arial;
+  color: #fff;
+  background: #ff7200;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.9s ease;
+}
+.second:hover {
+  color: #ff7200;
+  background: #fff;
+}
+.form-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #f3f3f3;
+  margin: 50px 0;
+}
+
+
+.form-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+.form-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.9s;
+  color: #fff;
+}
+.form-box input:focus ~ label,
+.form-box input:valid ~ label {
+  top: -2px;
+}
+/* ======================================================================================================= */
+.login-container p {
+  color: #fff;
+  font-size: 1em;
+  font-family: arial;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 30px;
+}
+.login-container .sing {
+  text-decoration: none;
+  color: #ff7200;
+}
+.login-container .sing:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff7200;
+}
+/* .login-link {
+  text-decoration: none;
+  color: #ff7200;
+}
+.login-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #ff7200;
+} */
+/* -------------------------------------------------------------------------- */
+.icon2 a {
+  font-size: 2.2em;
+  margin-left: 25px;
+  text-decoration: none;
+  color: #ffffffbe;
+  cursor: pointer;
+  transition: all 0.9s ease-in-out;
+}
+.icon2 a:hover {
+  color: #ff7200;
+}

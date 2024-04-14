@@ -1,0 +1,88 @@
+/* ----------image-1------------- */
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+}
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+.blink {
+  animation-name: blink;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.content h1:first-of-type{
+  animation-name: text;
+  animation-duration: 3s;
+  /* animation-timing-function: linear; */
+  /* animation-iteration-count: infinite; */
+}
+@keyframes text {
+  0% {
+    margin-right: -2000px;
+  }
+  50% {
+    margin-right: 50px;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+.content h1:last-of-type{
+    animation-name: text1;
+    animation-duration: 3s;
+    /* animation-timing-function: linear; */
+    /* animation-iteration-count: infinite; */
+  }
+  @keyframes text1 {
+    0% {
+      margin-left: -2000px;
+    }
+    50% {
+      margin-left: 50px;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }

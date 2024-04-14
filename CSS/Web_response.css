@@ -1,0 +1,10 @@
+ @media only screen and (max-width:1200px)  {
+    .main{
+        height: 800px;
+    }
+    .navbar{
+        width: 1151px;
+        height: 75%;
+        margin: -2500px;
+    }
+}
